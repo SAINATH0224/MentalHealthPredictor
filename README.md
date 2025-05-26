@@ -1,85 +1,133 @@
-🧠 Mental Health Treatment Outcome Predictor
-A machine learning-based application designed to predict whether individuals are likely to seek mental health treatment, based on demographic and behavioral attributes. This project focuses on university students and IT professionals, aiming to aid early identification and intervention strategies.
+You're right—GitHub Markdown does not support some special Unicode icons like emoji bullets (`🧠`, `📘`, etc.) consistently across all devices or browsers. Here's a clean and professional version of the `README.md` file **without emoji bullets** and using standard Markdown formatting for compatibility:
 
-📘 Overview
-This project systematically evaluates the performance of six machine learning models on a mental health survey dataset. It explores key demographic and behavioral predictors and helps derive actionable insights to enhance mental health support systems.
+---
 
-🛠️ Features
-Predicts likelihood of seeking mental health treatment
+# Mental Health Treatment Outcome Predictor
 
-Handles a wide range of features: gender, occupation, mental health history, and more
+This project uses machine learning to predict the likelihood of individuals seeking mental health treatment. The dataset contains demographic and behavioral data and aims to help organizations and institutions support individuals more effectively.
 
-Uses six classification algorithms:
+## Overview
 
-Logistic Regression
+This repository contains code for analyzing a mental health survey dataset and building predictive models. The primary goal is to evaluate the effectiveness of multiple classification algorithms to identify patterns related to treatment-seeking behavior.
 
-K-Nearest Neighbors (KNN)
+## Features
 
-Decision Tree
+* Predicts likelihood of mental health treatment.
+* Analyzes a wide range of features such as gender, occupation, mental health history, etc.
+* Applies and compares the following classifiers:
 
-Random Forest
+  * Logistic Regression
+  * K-Nearest Neighbors (KNN)
+  * Decision Tree
+  * Random Forest
+  * Support Vector Machine (SVM)
+  * Ensemble Voting Classifier
+* Evaluates models using:
 
-Support Vector Machine (SVM)
+  * Accuracy
+  * Precision
+  * Recall
+  * F1-score
+  * Balanced Classification Accuracy (BCA)
 
-Ensemble (Voting Classifier)
+## Dataset
 
-Performance evaluated using:
+* Source: [Kaggle](https://www.kaggle.com/)
+* Includes:
 
-Accuracy
+  * Demographic data (age, gender, country, occupation)
+  * Mental health indicators (family history, stress, mood swings, coping ability)
+  * Treatment-related behavior (care options, interviews, willingness to seek treatment)
 
-Precision
+## Exploratory Data Analysis
 
-Recall
+* Count plots for categorical variables
+* Histograms for numeric variables
+* Heatmaps for correlation analysis
+* Distribution comparison of treated vs non-treated participants
 
-F1-score
+## Methodology
 
-Balanced Classification Accuracy (BCA)
+1. **Data Preprocessing**
 
-🗃️ Dataset
-Sourced from Kaggle
+   * Handle missing values
+   * Encode categorical variables
+   * Feature selection using SelectKBest with f\_regression
 
-Data includes:
+2. **Model Training**
 
-Demographics: Gender, Age, Country, Occupation
+   * Train-test split: 80/20
+   * Applied 3-fold and 5-fold cross-validation
+   * Used metrics like Accuracy, Precision, Recall, F1-Score
 
-Behavioral: Mood swings, Stress levels, Coping struggles
+3. **Model Evaluation**
 
-History: Family mental health, Previous treatment
+   * Evaluated all six models on test set
+   * Logged top results and metrics to Excel for reference
 
-Care access: Participation in interviews, Accessibility
+## Results
 
-🔍 Exploratory Data Analysis
-Count plots and histograms for visualizing variable distributions
+| Model               | Accuracy |
+| ------------------- | -------- |
+| Random Forest       | 0.725    |
+| Decision Tree       | 0.725    |
+| Logistic Regression | \~0.69   |
+| SVM                 | \~0.68   |
+| KNN                 | \~0.67   |
+| Ensemble            | \~0.71   |
 
-Correlation heatmaps to explore inter-feature relationships
+## Conclusion
 
-Analysis of treatment-seeking trends across different demographics
+Tree-based models (Random Forest, Decision Tree) delivered the highest performance with 72.5% accuracy. Ensemble methods offered robust results but slightly lower than individual tree models. These models can be a helpful tool in designing mental health support systems for specific populations like students and IT professionals.
 
-🧪 Model Building & Evaluation
-➤ Preprocessing
-Categorical variable encoding
+## Installation
 
-Handling missing values
+1. Clone the repository:
 
-Feature selection with SelectKBest
+   ```
+   git clone https://github.com/yourusername/mental-health-predictor.git
+   cd mental-health-predictor
+   ```
 
-➤ Model Training
-Training-test split: 80-20
+2. Install dependencies:
 
-k-Fold Cross-Validation (k = 3 and 5)
+   ```
+   pip install -r requirements.txt
+   ```
 
-Metrics computed: Accuracy, MSE, MAE, R², Precision, Recall, F1-score, Specificity
+3. Run the notebook:
 
-➤ Best Performing Models
-Random Forest and Decision Tree achieved top accuracy of 72.5%
+   ```
+   jupyter notebook Mental_Health_Predictor.ipynb
+   ```
 
-Ensemble method provided robust but slightly lower accuracy
+## Repository Structure
 
-📊 Results
-Model	Accuracy
-Random Forest	0.725
-Decision Tree	0.725
-Logistic Regression	~0.69
-SVM	~0.68
-KNN	~0.67
-Ensemble	~0.71
+```
+mental-health-predictor/
+├── data/
+│   └── mental_health.csv
+├── notebooks/
+│   └── Mental_Health_Predictor.ipynb
+├── results/
+│   └── model_results.xlsx
+├── visuals/
+│   └── plots/
+├── README.md
+└── requirements.txt
+```
+
+## Authors
+
+* H. Chetan Goud – [chetan.h050@nmims.edu.in](mailto:chetan.h050@nmims.edu.in)
+* Goda Sainath Goud – [sainath.goud047@nmims.edu.in](mailto:sainath.goud047@nmims.edu.in)
+* John Austin – [john.austin049@nmims.edu.in](mailto:john.austin049@nmims.edu.in)
+
+## References
+
+1. Abdul Rahman et al., *Machine Learning-Based Prediction of Mental Well-Being*
+2. PRISMA 2020 Systematic Review Guidelines
+3. Machine Learning Approaches in Predicting Mental Health Problems
+4. Dr. J. Arokia Renjit et al., *Prediction of Mental Health Using ML*
+
+
