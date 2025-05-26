@@ -1,7 +1,3 @@
-You're right—GitHub Markdown does not support some special Unicode icons like emoji bullets (`🧠`, `📘`, etc.) consistently across all devices or browsers. Here's a clean and professional version of the `README.md` file **without emoji bullets** and using standard Markdown formatting for compatibility:
-
----
-
 # Mental Health Treatment Outcome Predictor
 
 This project uses machine learning to predict the likelihood of individuals seeking mental health treatment. The dataset contains demographic and behavioral data and aims to help organizations and institutions support individuals more effectively.
@@ -116,12 +112,6 @@ mental-health-predictor/
 ├── README.md
 └── requirements.txt
 ```
-
-## Authors
-
-* H. Chetan Goud – [chetan.h050@nmims.edu.in](mailto:chetan.h050@nmims.edu.in)
-* Goda Sainath Goud – [sainath.goud047@nmims.edu.in](mailto:sainath.goud047@nmims.edu.in)
-* John Austin – [john.austin049@nmims.edu.in](mailto:john.austin049@nmims.edu.in)
 
 ## References
 
