@@ -13,7 +13,19 @@ MentalHealthPredictor/
 ├── Mental_Health_Prediction.ipynb # Main notebook with all code
 ├── README.md # Project documentation
 └── .gitignore # Files to ignore during git pushes
+## 📄 Research Paper
 
+A full research paper is included and can be accessed here:  
+📘 **[Mental_Health_final_paper.pdf](https://github.com/SAINATH0224/MentalHealthPredictor/blob/main/Mental_Health_Analysis.pdf)**
+
+It covers:
+- Background and motivation
+- Dataset overview
+- Methodology and preprocessing
+- Machine learning models and evaluation
+- Results, analysis, and future scope
+
+This document can be referenced for academic or presentation purposes.
 
 ## 🔍 Dataset
 
