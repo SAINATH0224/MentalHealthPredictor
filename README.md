@@ -37,23 +37,23 @@ Suitable for **academic review, interviews, and presentations**.
 
 MentalHealthPredictor/
 │
-├── Data/
+├── Data/ # Raw and processed datasets
 │ ├── Mental_Health_Dataset.csv
 │ └── Mental_Health_Dataset_processed.csv
 │
-├── preprocessing/
-│ ├── clean_mental_step1.py
-│ └── visualization_eda_step2.py
+├── preprocessing/ # Data cleaning and EDA scripts
+│ ├── clean_mental_step1.py # Data preprocessing & missing value handling
+│ └── visualization_eda_step2.py # Exploratory Data Analysis (EDA)
 │
-├── models/
-│ ├── logistic_mental_step3.py
-│ ├── decision_mental_step4.py
-│ ├── random_mental_step5.py
-│ ├── knn_mental_step6.py
-│ ├── support_mental_step7.py
-│ └── ensemble_method_mental_step8.py
+├── models/ # Machine learning model implementations
+│ ├── logistic_mental_step3.py # Logistic Regression model
+│ ├── decision_mental_step4.py # Decision Tree classifier
+│ ├── random_mental_step5.py # Random Forest classifier
+│ ├── knn_mental_step6.py # K-Nearest Neighbors (KNN)
+│ ├── support_mental_step7.py # Support Vector Machine (SVM)
+│ └── ensemble_method_mental_step8.py # Voting Ensemble model
 │
-├── Results/
+├── Results/ # Model evaluation outputs
 │ ├── logistic_regression_results.xlsx
 │ ├── decision_tree_results.xlsx
 │ ├── random_forest_results.xlsx
@@ -61,9 +61,9 @@ MentalHealthPredictor/
 │ ├── svm_results.xlsx
 │ └── ensemble_results.xlsx
 │
-├── Mental_Health_Analysis.pdf
-├── README.md
-└── .gitignore
+├── Mental_Health_Analysis.pdf # Detailed research paper & analysis
+├── README.md # Project documentation
+└── .gitignore # Ignored files
 
 ---
 
