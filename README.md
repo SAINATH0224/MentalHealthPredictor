@@ -5,7 +5,7 @@ It demonstrates a complete **machine learning pipeline** — from data preproces
 
 > ⚠️ This is a **Machine Learning project (not a website)**, built to showcase data analysis, model experimentation, and result interpretation.
 
----
+
 
 ## 📌 Why this Project Matters
 
@@ -16,7 +16,7 @@ This project:
 - Predicts treatment-seeking behavior using ML models
 - Highlights how data-driven insights can support early awareness and decision-making
 
----
+
 
 ## 📄 Research Paper
 
