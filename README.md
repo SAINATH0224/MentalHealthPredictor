@@ -1,103 +1,38 @@
-# 🧠 Mental Health Predictor
+🧠 Mental Health Treatment Predictor (Machine Learning)
 
-This project aims to predict whether employees in the tech industry require mental health treatment using survey data. By applying machine learning models to real-world data, it helps in understanding patterns and potential risk factors associated with mental health.
+This project focuses on predicting whether an individual in the tech industry is likely to seek mental health treatment, using real-world survey data and multiple machine learning models.
+The goal is to identify key factors influencing mental health outcomes and demonstrate a complete, well-evaluated ML pipeline — from data preprocessing to model comparison.
 
-## 📌 Project Overview
+🎯 This is a Machine Learning project (not a web app), designed to showcase data analysis, model experimentation, and result interpretation.
 
-Mental health in the workplace, especially in the tech sector, is a growing concern. This project uses the [Mental Health in Tech Survey](https://www.kaggle.com/osmi/mental-health-in-tech-survey) to analyze and predict whether an individual is likely to seek treatment for mental health issues.
+📌 Why this project matters
 
-## 📂 Repository Structure
-MentalHealthPredictor/
-├── Data/
-│ └── survey.csv # Dataset used
-├── Mental_Health_Prediction.ipynb # Main notebook with all code
-├── README.md # Project documentation
-└── .gitignore # Files to ignore during git pushes
-## 📄 Research Paper
+Mental health challenges are increasingly common in high-pressure work environments like the tech industry. However, mental health issues often go underreported or untreated.
 
-A full research paper is included and can be accessed here:  
-📘 **[Mental_Health_final_paper.pdf](https://github.com/SAINATH0224/MentalHealthPredictor/blob/main/Mental_Health_Analysis.pdf)**
+This project:
 
-It covers:
-- Background and motivation
-- Dataset overview
-- Methodology and preprocessing
-- Machine learning models and evaluation
-- Results, analysis, and future scope
+Analyzes demographic and behavioral patterns related to mental health
 
-This document can be referenced for academic or presentation purposes.
+Predicts treatment-seeking behavior using ML models
 
-## 🔍 Dataset
+Demonstrates how data-driven approaches can support early identification and awareness
 
-- **Source**: Kaggle — OSMI Mental Health in Tech Survey  
-- **Size**: ~1,250 responses  
-- **Features**:  
-  - Age, Gender, Country  
-  - Company size, Remote work, Work interference  
-  - Family history, Mental health history  
-  - and more...
+📄 Research Paper (Detailed Documentation)
 
-## 🛠️ Technologies Used
+📘 Read the full research paper (PDF)
 
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn
+The paper includes:
 
-## 🚀 Workflow
+Problem motivation & background
 
-### 1. Data Preprocessing
-- Dropped irrelevant columns  
-- Encoded categorical variables  
-- Handled missing values
+Dataset description
 
-### 2. Exploratory Data Analysis (EDA)
-- Plotted distributions (age, gender, company size, etc.)  
-- Used heatmaps and bar charts to explore patterns
+Data preprocessing & EDA
 
-### 3. Model Building
-Trained and evaluated:
-- Logistic Regression  
-- Random Forest  
-- K-Nearest Neighbors (KNN)  
-- Decision Tree
+Model building methodology
 
-> ✅ **Best Model**: Random Forest Classifier
+Model-wise evaluation & comparison
 
-### 4. Model Evaluation
-- Compared accuracy of each model  
-- (To be added): Confusion Matrix, F1-score, ROC-AUC
+Results, conclusions, and future scope
 
-## 📊 Results
-
-| Model              | Accuracy |
-|-------------------|----------|
-| Logistic Regression | ~78%    |
-| Decision Tree       | ~81%    |
-| KNN                 | ~79%    |
-| **Random Forest**   | **83%** |
-
-## 📈 Future Improvements
-
-- Add detailed evaluation metrics  
-- Perform hyperparameter tuning  
-- Feature importance using SHAP  
-- Deploy using Streamlit or Flask
-
-## 📦 Installation
-
-```bash
-# 1. Clone this repository
-git clone https://github.com/Sruthi1907/MentalHealthPredictor.git
-
-# 2. Change into the project directory
-cd MentalHealthPredictor
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# If requirements.txt is missing, install manually
-pip install pandas numpy matplotlib seaborn scikit-learn
-
-# 4. Launch the notebook
-# Open 'Mental_Health_Prediction.ipynb' in Jupyter Notebook or VS Code
+👉 Suitable for academic review, viva, or interviews.
