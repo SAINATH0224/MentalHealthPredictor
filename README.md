@@ -1,38 +1,182 @@
-🧠 Mental Health Treatment Predictor (Machine Learning)
+# 🧠 Mental Health Treatment Predictor (Machine Learning)
 
-This project focuses on predicting whether an individual in the tech industry is likely to seek mental health treatment, using real-world survey data and multiple machine learning models.
-The goal is to identify key factors influencing mental health outcomes and demonstrate a complete, well-evaluated ML pipeline — from data preprocessing to model comparison.
+This project focuses on predicting whether an individual in the tech industry is likely to seek mental health treatment using real-world survey data.  
+It demonstrates a complete **machine learning pipeline** — from data preprocessing and exploratory analysis to multi-model training and evaluation.
 
-🎯 This is a Machine Learning project (not a web app), designed to showcase data analysis, model experimentation, and result interpretation.
+> ⚠️ This is a **Machine Learning project (not a website)**, built to showcase data analysis, model experimentation, and result interpretation.
 
-📌 Why this project matters
+---
 
-Mental health challenges are increasingly common in high-pressure work environments like the tech industry. However, mental health issues often go underreported or untreated.
+## 📌 Why this Project Matters
+
+Mental health challenges are increasingly common in high-pressure environments like the tech industry, yet they often remain underreported.
 
 This project:
+- Analyzes demographic and behavioral factors related to mental health
+- Predicts treatment-seeking behavior using ML models
+- Highlights how data-driven insights can support early awareness and decision-making
 
-Analyzes demographic and behavioral patterns related to mental health
+---
 
-Predicts treatment-seeking behavior using ML models
+## 📄 Research Paper
 
-Demonstrates how data-driven approaches can support early identification and awareness
+📘 **[View Full Research Paper (PDF)](https://github.com/SAINATH0224/MentalHealthPredictor/blob/main/Mental_Health_Analysis.pdf)**
 
-📄 Research Paper (Detailed Documentation)
+The paper covers:
+- Background & motivation  
+- Dataset overview  
+- Data preprocessing & EDA  
+- Machine learning models  
+- Results, analysis, and conclusions  
 
-📘 Read the full research paper (PDF)
+Suitable for **academic review, interviews, and presentations**.
 
-The paper includes:
+---
 
-Problem motivation & background
+## 📂 Project Structure
 
-Dataset description
+MentalHealthPredictor/
+│
+├── Data/
+│ ├── Mental_Health_Dataset.csv
+│ └── Mental_Health_Dataset_processed.csv
+│
+├── preprocessing/
+│ ├── clean_mental_step1.py
+│ └── visualization_eda_step2.py
+│
+├── models/
+│ ├── logistic_mental_step3.py
+│ ├── decision_mental_step4.py
+│ ├── random_mental_step5.py
+│ ├── knn_mental_step6.py
+│ ├── support_mental_step7.py
+│ └── ensemble_method_mental_step8.py
+│
+├── Results/
+│ ├── logistic_regression_results.xlsx
+│ ├── decision_tree_results.xlsx
+│ ├── random_forest_results.xlsx
+│ ├── knn_results.xlsx
+│ ├── svm_results.xlsx
+│ └── ensemble_results.xlsx
+│
+├── Mental_Health_Analysis.pdf
+├── README.md
+└── .gitignore
 
-Data preprocessing & EDA
 
-Model building methodology
+---
 
-Model-wise evaluation & comparison
+## 🔍 Dataset
 
-Results, conclusions, and future scope
+- **Source**: Kaggle – OSMI Mental Health in Tech Survey  
+- **Domain**: Mental Health, Workplace Analytics  
+- **Target Variable**: `treatment` (Yes / No)
 
-👉 Suitable for academic review, viva, or interviews.
+### Key Features
+- Gender, Country, Occupation  
+- Self-employed status  
+- Family history of mental illness  
+- Stress levels, mood swings, coping struggles  
+- Work interest, social interaction  
+- Access to mental health care options  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language**: Python  
+- **Data Processing**: Pandas, NumPy  
+- **Visualization**: Matplotlib, Seaborn  
+- **Machine Learning**: Scikit-learn  
+
+---
+
+## 🚀 Workflow
+
+### 1️⃣ Data Preprocessing
+- Converted categorical features to proper data types  
+- Handled missing values (mode for categorical, mean for numerical)  
+- Removed irrelevant columns  
+- Applied one-hot encoding  
+
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Distribution analysis of categorical variables  
+- Visualization of treatment trends across demographics  
+- Identification of key behavioral indicators  
+
+### 3️⃣ Model Building
+Each model was trained independently using:
+- Feature selection (`SelectKBest`)  
+- 3-fold and 5-fold cross-validation  
+- 80–20 train-test split  
+
+Models implemented:
+- Logistic Regression  
+- Decision Tree Classifier  
+- Random Forest Classifier  
+- K-Nearest Neighbors (KNN)  
+- Support Vector Machine (SVM)  
+- Voting Ensemble Model  
+
+### 4️⃣ Model Evaluation
+Models were evaluated using:
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score  
+- Mean Squared Error (MSE)  
+- Mean Absolute Error (MAE)  
+
+All results are saved as **Excel files** for comparison.
+
+---
+
+## 📊 Results Summary
+
+| Model               | Accuracy (Approx.) |
+|--------------------|-------------------|
+| Logistic Regression | ~78% |
+| KNN                | ~79% |
+| Decision Tree      | ~81% |
+| SVM                | ~80% |
+| **Random Forest**  | **~83%** |
+| Ensemble Model     | ~82% |
+
+✅ **Best Performing Model**: **Random Forest Classifier**
+
+---
+
+## 🧠 Key Insights
+
+- Behavioral and workplace factors strongly influence treatment-seeking behavior  
+- Tree-based models outperform linear models on this dataset  
+- Ensemble models improve stability  
+- Feature selection and validation significantly impact performance  
+
+---
+
+## 🔮 Future Improvements
+
+- Hyperparameter tuning (GridSearchCV / RandomizedSearchCV)  
+- Feature importance using SHAP  
+- ROC-AUC and confusion matrix analysis  
+- Optional deployment using Streamlit  
+
+---
+
+## 📦 Run Locally
+
+```bash
+git clone https://github.com/SAINATH0224/MentalHealthPredictor.git
+cd MentalHealthPredictor
+pip install pandas numpy matplotlib seaborn scikit-learn
+python models/random_mental_step5.py
+👤 Author
+
+Sainath Goud
+B.Tech – Computer Science & Engineering (Data Science)
+Machine Learning | Data Analysis | Applied AI
+
+📌 This repository is part of my academic and machine learning portfolio.
