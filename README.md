@@ -45,25 +45,6 @@ MentalHealthPredictor/
 │ ├── clean_mental_step1.py
 │ └── visualization_eda_step2.py
 │
-├── models/
-│ ├── logistic_mental_step3.py
-│ ├── decision_mental_step4.py
-│ ├── random_mental_step5.py
-│ ├── knn_mental_step6.py
-│ ├── support_mental_step7.py
-│ └── ensemble_method_mental_step8.py
-│
-├── Results/
-│ ├── logistic_regression_results.xlsx
-│ ├── decision_tree_results.xlsx
-│ ├── random_forest_results.xlsx
-│ ├── knn_results.xlsx
-│ ├── svm_results.xlsx
-│ └── ensemble_results.xlsx
-│
-├── Mental_Health_Analysis.pdf
-├── README.md
-└── .gitignore
 
 
 ---
