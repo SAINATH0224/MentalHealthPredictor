@@ -66,6 +66,8 @@ MentalHealthPredictor/
 ├── README.md                     # Project documentation
 └── .gitignore                    # Ignored files
 
+```
+
 ---
 
 ## 🔍 Dataset
